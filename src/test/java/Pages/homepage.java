@@ -7,5 +7,6 @@ public class homepage {
 	public void MasterText()
 	{
 	
+		
 	}
 }
