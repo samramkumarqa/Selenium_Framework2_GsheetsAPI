@@ -40,6 +40,7 @@ public class ScriptDriver {
 		driver.get("http://google.com");
 		driver.quit();*/
 		
+		
 		//Chrome driver
 		//System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/Selenium/drivers/chromedriver");
 		driver = new ChromeDriver();
