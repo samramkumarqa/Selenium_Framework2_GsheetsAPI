@@ -27,7 +27,7 @@ public class ScriptDriver {
 	public void driverSetup(HashMap<String, String> data) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		
-		report = new ExtentReports("//Users//ramkumars//eclipse-workspace//SeleniumFramework//src//Results//Amazonpurchaseresults.html");
+		report = new ExtentReports("//Users//ramkumars//eclipse-workspace//Selenium_Framework2//src//Results//Amazonpurchaseresults.html");
 		test = report.startTest("ExtentDemo");
 		
 		System.out.print("Got the data value :"+data.get("ToRun"));
@@ -65,7 +65,7 @@ public class ScriptDriver {
 		ArrayList<HashMap> excelData;
 		TestDataReader.readExcelFile objExcelFile = new TestDataReader.readExcelFile();
 		//excelData = objExcelFile.readExcel("E:\\ExcelData","ToolsQATestData.xls","Sheet1");
-		excelData = objExcelFile.readExcel("/Users/ramkumars/eclipse-workspace/SeleniumFramework_Maven/src/test/java/TestData","ToolsQATestData3.xls","Sheet1");
+		excelData = objExcelFile.readExcel("/Users/ramkumars/eclipse-workspace/Selenium_Framework2/src/test/java/TestData","ToolsQATestData3.xls","Sheet1");
 		
 		List<Object[]> dataArray = new ArrayList<Object[]>();
 		for(HashMap data : excelData){
