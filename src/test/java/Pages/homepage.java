@@ -7,6 +7,6 @@ public class homepage {
 	public void MasterText()
 	{
 	
-		System.out.print("HI");
+		System.out.print("Hi");
 	}
 }
