@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -42,8 +43,13 @@ public class ScriptDriver {
 		
 		
 		//Chrome driver
-		//System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/Selenium/drivers/chromedriver");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/Selenium_Essentials/drivers/chromedriver");
+		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(options);
+		
+		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.get("http://amazon.in");
