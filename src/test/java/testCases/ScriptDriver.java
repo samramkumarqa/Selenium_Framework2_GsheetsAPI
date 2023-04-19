@@ -43,7 +43,9 @@ public class ScriptDriver {
 		
 		
 		//Chrome driver
-		System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/Selenium_Essentials/drivers/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/Selenium_Essentials/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/ramkumars/eclipse-workspace/Selenium_Framework2/src/test/java/Alldrivers/chromedriver");
+		
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
