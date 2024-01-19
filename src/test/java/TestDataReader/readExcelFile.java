@@ -37,7 +37,7 @@ public class readExcelFile {
 	    {
 	    	HashMap<String, String> exceldatahashmap = new HashMap<String, String>();
 	    	Row Rrow = iterateRow.next();
-	        if(Rrow.getCell(1).getStringCellValue().equals("Yes")){
+	        if(Rrow.getCell(1).getStringCellValue().equals("No")){
 	        	String cellvalue="";
 	        	//Create a loop to print cell values in a row
 	        	
